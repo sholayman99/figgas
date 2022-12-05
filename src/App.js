@@ -1,10 +1,13 @@
 import './App.css';
-import Button from 'react-bootstrap/Button';
+import {Routes , Route} from 'react-router-dom'
+import Home from './Pages/Home/Home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Button variant="primary">Primary</Button> 
+    <div>
+      <Routes>
+        <Route path='/' element={ <Home />}></Route>
+      </Routes>
     </div>
   );
 }
