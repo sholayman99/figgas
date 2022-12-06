@@ -1,0 +1,10 @@
+.serveFood-text{
+    text-align: center;
+   padding-top: 100px;
+}
+
+.serveFood-text h2{
+    font-weight: bolder;
+    font-size: 35px;
+    margin-bottom: 6px;
+}
