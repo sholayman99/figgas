@@ -1,0 +1,55 @@
+.story{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+
+.story-text{
+    width: 40%;
+}
+
+.story h1{
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+
+.story img{
+    width: 500px;
+}
+
+
+@media screen and (max-width:767px) {
+    .story{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .story-text{
+        width: 90%;
+    }
+
+    .story img{
+        width: 95%;
+        padding: 30px 10px;
+    }
+    
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+  
+    .story img {
+        width: 350px;
+    }
+
+    .story h1{
+        font-weight: bolder;
+        margin: 15px 0px;
+    }
+}
+
