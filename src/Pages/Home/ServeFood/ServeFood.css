@@ -8,3 +8,13 @@
     font-size: 35px;
     margin-bottom: 6px;
 }
+
+@media screen and (max-width:767px) {
+    .serveFood-text{
+        padding-top: 30px;
+    }
+
+    .serveFood-text h2{
+        font-size: 26px;
+    }
+}
