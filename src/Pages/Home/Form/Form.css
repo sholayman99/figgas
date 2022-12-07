@@ -1,54 +1,105 @@
-.booking{
-    background-image:url('../../../assets/pizza.jpg') ;
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    padding: 5px 60px;
-    
-
+.booking {
+  background-image: url("../../../assets/pizza.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 10px;
 }
 
-.form-text{
+.form-text {
+  color: white;
+  max-width: 512px;
+}
+.form-text h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.reservation-form {
+  max-width: 450px;
+  background-color: rgb(252, 242, 242);
+  padding: 60px 30px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(150, 147, 147);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgb(243, 241, 241);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 767px) {
+  .booking {
+    height: auto;
+    padding: 15px 0px;
+  }
+
+  .form-text {
     color: white;
-    max-width:  512px;
-}
-.form-text h1{
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
+    max-width: 300px;
+  }
 
-.reservation-form{
-    max-width: 450px;
+  .form-text h1 {
+    font-size: 24px;
+  }
+
+  .reservation-form {
+    max-width: 320px;
     background-color: rgb(252, 242, 242);
-    padding: 60px 30px;
-    
-}
-
-.input-field{
+    padding: 30px 20px;
+  }
+  .input-field {
     width: 100%;
-    padding: 8px 8px;
-    margin: 8px 0;
+    padding: 4px 4px;
+    margin: 4px 0;
     display: inline-block;
     border: 1px solid rgb(150, 147, 147);
     border-radius: 4px;
     box-sizing: border-box;
     background-color: rgb(243, 241, 241);
+  }
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-    background: transparent;
-    bottom: 0;
-    color: transparent;
-    cursor: pointer;
-    height: auto;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: auto;
+@media screen and (max-width: 767px) {
+  .booking {
+    background-attachment: unset;
+    flex-direction: column;
+    padding: 15px 15px;
+    justify-content: space-around;
+  }
+
+  .form-text {
+    max-width: 100%;
+  }
+
+  .form-text h1 {
+    font-size: 30px;
+  }
+  .reservation-form {
+    max-width: 100%;
+    background-color: rgb(252, 242, 242);
+    padding: 30px 20px;
+  }
 }
