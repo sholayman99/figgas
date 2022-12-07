@@ -1,0 +1,54 @@
+.booking{
+    background-image:url('../../../assets/pizza.jpg') ;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 5px 60px;
+    
+
+}
+
+.form-text{
+    color: white;
+    max-width:  512px;
+}
+.form-text h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.reservation-form{
+    max-width: 450px;
+    background-color: rgb(252, 242, 242);
+    padding: 60px 30px;
+    
+}
+
+.input-field{
+    width: 100%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(243, 241, 241);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}

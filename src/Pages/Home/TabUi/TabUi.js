@@ -9,7 +9,7 @@ const TabUi = () => {
     }
 
     let [categories] = useState({
-       AllMenu : [
+       All : [
           {
             id: 1,
             name:'Cappuccion',
@@ -81,7 +81,7 @@ const TabUi = () => {
               },
              
         ],
-        BudgetMeal: [
+        Budget: [
             {
                 id: 1,
                 name:'Macchiato',
@@ -101,15 +101,15 @@ const TabUi = () => {
         ],
       })
     return (
-       <div className="w-full   px-2 py-16 sm:px-0  mb-20">
+       <div className="w-full   px-2 pt-8 sm:px-0  pb-20 ">
       <Tab.Group  >
-        <Tab.List className="flex lg:flex-row md:flex-row  flex-col sm:flex-col  mx-16  lg:h-28 space-x-1 rounded-xl lg:shadow-lg bg-white p-1">
+        <Tab.List className="flex lg:flex-row md:flex-row lg:mx-16  lg:h-28 space-x-1 rounded-xl lg:shadow-lg bg-white lg:p-1">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
               className={({ selected }) =>
                 classNames(
-                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 ',
+                  'w-full rounded-lg lg:py-2.5 md:py-2 py-1 lg:text-sm md:text-sm text-xs font-medium leading-5 ',
                   'ring-white ring-opacity-60 ring-offset-2  focus:outline-none focus:ring-2',
                   selected
                     ? 'selected'
@@ -121,7 +121,7 @@ const TabUi = () => {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels className="lg:mt-6 mx-16 ">
+        <Tab.Panels className=" lg:mx-16 ">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel
               key={idx}
@@ -130,9 +130,9 @@ const TabUi = () => {
                 'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400  focus:outline-none focus:ring-2'
               )}
             >
-              <ul className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 py-10  gap-4 '>
+              <ul className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 py-6  gap-4 '>
                 {posts.map((post) => (
-                <div key={post.id} className="card max-w-lg rounded-lg bg-white ">
+                <div key={post.id} className="card max-w-lg  rounded-lg bg-white ">
                 <div className='flex p-4'>
                 <div >
                   <h2 className="card-title font-semibold text-lg my-3">{post.name}</h2>

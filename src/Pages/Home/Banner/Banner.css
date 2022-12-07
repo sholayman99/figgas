@@ -4,6 +4,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-position-x: center center;
+    height: auto;
    
 }
 .banner-text{
@@ -35,15 +36,17 @@
 }
 
 .custom-btn:hover{
-    background-color: black;
+    background-color: rgb(44, 49, 55);
 }
 
 @media screen and (max-width:767px)  {
    .banner{
     background-attachment: unset;
+    
    } 
    .banner-text{
-    padding: 5px  5px ;
+    padding: 40px 0 5px 5px ;
+   
      }
    .banner h1{
     font-size: 30px;
