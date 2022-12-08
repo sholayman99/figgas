@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import "./Form.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import DatalistInput from 'react-datalist-input';
+import 'react-datalist-input/dist/styles.css';
 
 
 const Form = () => {
   const [startDate, setStartDate] = useState(new Date());
+ 
   return (
     <section className="booking">
       <div className="form-text">
@@ -21,7 +24,19 @@ const Form = () => {
         <input className="input-field" type={"text"} placeholder="Your Name" />
         <input className="input-field" type={"text"} placeholder="Your Phone Number" />
         <input className="input-field" type={"email"} placeholder="Your Email" />
+        <DatalistInput
+        placeholder="Select  Event"
+        className="input-field"
         
+         onSelect={(item) => console.log(item.value)}
+        items={[
+      { id: 'Chocolate', value: 'Event One' },
+      { id: 'Coconut', value: 'Event Two' },
+      { id: 'Mint', value: 'Event Three' },
+      { id: 'Strawberry', value: 'Event Four' },
+      { id: 'Vanilla', value: 'Event Five' },
+    ]}
+  />
        
           <DatePicker
             selected={startDate}
