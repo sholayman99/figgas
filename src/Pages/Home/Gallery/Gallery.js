@@ -118,7 +118,7 @@ const Gallery = () => {
                 key={idx}
                 className={classNames(
                   'rounded-xl  p-3',
-                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400  focus:outline-none focus:ring-2'
+                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-red-400  focus:outline-none focus:ring-2'
                 )}
               >
                 <ul className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-6  gap-10 '>
