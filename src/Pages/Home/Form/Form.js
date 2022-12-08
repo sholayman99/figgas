@@ -19,7 +19,7 @@ const Form = () => {
         <input className="input-field" type={'text'} placeholder='SUBJECT' />
         <input className="input-field" type={'email'} placeholder='EMAIL' />
         <input className="input-field" type={'number'} placeholder='NUMBER' />
-        <input className="input-field" type={'date'} placeholder='DATE' />
+        <input className="input-field" type={'date'}  />
        
 
        <input type={'submit'} value='Make Reservation' className="custom-btn" />

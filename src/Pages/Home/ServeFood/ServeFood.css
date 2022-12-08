@@ -8,6 +8,9 @@
     font-size: 35px;
     margin-bottom: 6px;
 }
+.serveFood-text p{
+   color:  rgb(57, 55, 55);
+}
 
 @media screen and (max-width:767px) {
     .serveFood-text{
