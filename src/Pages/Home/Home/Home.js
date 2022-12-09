@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import Form from '../Form/Form';
 import Gallery from '../Gallery/Gallery';
+import LatestBlog from '../LatestBlog/LatestBlog';
 import ServeFood from '../ServeFood/ServeFood';
 import Story from '../Story/Story';
 
@@ -13,6 +14,7 @@ const Home = () => {
          <ServeFood />
          <Form /> 
          <Gallery />  
+         <LatestBlog />
         </div>
     );
 };

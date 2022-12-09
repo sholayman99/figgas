@@ -1,0 +1,26 @@
+.blog{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+    background-color: rgb(248 250 252);
+    padding: 40px 10px;
+}
+.card-body{
+    padding: 2px;
+    background-color: #fff;
+    width: 282px;
+}
+.card-body img {
+    width: 280px;
+    height: 200px;
+}
+.card-body button {
+    background-color: rgb(23, 23, 24);
+    color: #fff;
+    margin: 10px 0px;
+    padding: 2px 4px;
+}
+.card-body h1{
+   font-size: 20px;
+   font-weight: 700;
+}
