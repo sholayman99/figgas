@@ -12,3 +12,9 @@
 .gallery-text p{
     color: rgb(57, 55, 55);
 }
+
+@media screen and (max-width:767px) {
+  .gallery-text h1{
+    font-size: 30px;
+  }
+}
