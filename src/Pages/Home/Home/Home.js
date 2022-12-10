@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../Footer/Footer/Footer';
 import Banner from '../Banner/Banner';
 import Form from '../Form/Form';
 import Gallery from '../Gallery/Gallery';
@@ -15,6 +16,7 @@ const Home = () => {
          <Form /> 
          <Gallery />  
          <LatestBlog />
+         <Footer />
         </div>
     );
 };
