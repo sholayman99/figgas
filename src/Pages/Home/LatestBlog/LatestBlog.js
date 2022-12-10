@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./LatestBlog.css";
+import { AiOutlineHeart } from 'react-icons/ai';
+import { FaRegComment } from 'react-icons/fa';
 
 const LatestBlog = () => {
   const [blogs] = useState([
@@ -56,10 +58,25 @@ const LatestBlog = () => {
                     <h1>{b.title}</h1>
                 </Link>
              
-              <p> {b.description} </p>
-            </div>
+              <p className="text-gray-600"> {b.description} </p>
+
+          <div className="flex items-center justify-between mt-3 text-gray-600">
+           
+           <div className="flex items-center ">
+           <p className="text-lg"> <AiOutlineHeart/></p>
+           <p className="text-md">15 Likes</p>
+           </div>
+           <div className="flex items-center ">
+           <p className="mx-1"> <FaRegComment/> </p>
+           <p>02 Comments</p>
+           </div>
+          </div>
+        
+          </div>
+           
           </div>
         ))}
+       
       </div>
     </section>
   );
