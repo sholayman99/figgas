@@ -1,0 +1,14 @@
+.carousel{
+    background-image: url('https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width:767px) {
+    .carousel{
+        background-attachment: unset;
+    }
+}

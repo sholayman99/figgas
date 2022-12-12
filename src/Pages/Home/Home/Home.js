@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../../Carosoul/Carousel';
 import Footer from '../../Footer/Footer/Footer';
 import Banner from '../Banner/Banner';
 import Form from '../Form/Form';
@@ -15,8 +16,12 @@ const Home = () => {
          <ServeFood />
          <Form /> 
          <Gallery />  
+         <Carousel />
          <LatestBlog />
          <Footer />
+
+
+
         </div>
     );
 };

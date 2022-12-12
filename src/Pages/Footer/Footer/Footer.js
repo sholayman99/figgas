@@ -4,7 +4,7 @@ import FooterBody from '../FooterBody/FooterBody';
 
 const Footer = () => {
     return (
-        <footer className='mt-28'>
+        <footer >
           <FooterBody />  
           <CopyRight />
         </footer>

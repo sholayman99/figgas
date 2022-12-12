@@ -88,7 +88,7 @@ const Gallery = () => {
          })
 
     return (
-        <section className="w-full   px-2 pt-10 sm:px-0  pb-20 bg-slate-50 ">
+        <section className="w-full   px-2 pt-10 sm:px-0   bg-slate-50 ">
             <div className='gallery-text' >
                 <h1>Food and Customer Gallery</h1>
                 <p>Who are in extremely love with eco friendly system.</p>
