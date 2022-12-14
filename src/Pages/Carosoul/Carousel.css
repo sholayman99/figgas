@@ -1,5 +1,5 @@
 .carousel{
-    background-image: url('https://images.pexels.com/photos/7333136/pexels-photo-7333136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('../../../src/assets//carousel.jpg');
     background-size: cover;
     height: auto;
     background-repeat: no-repeat;

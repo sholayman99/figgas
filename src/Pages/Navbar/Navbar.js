@@ -1,14 +1,14 @@
 import React,{ useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css'
 
 const Navbar = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
         <nav className="navigation">
-      <a href="/" className="brand-name">
-        MacroSoft
-      </a>
+      <Link to="/" className="brand-name">
+        Figgas
+      </Link>
       <button
         className="hamburger"
         onClick={() => {
@@ -35,13 +35,13 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Contact</NavLink>
           </li>
         </ul>
       </div>
