@@ -1,4 +1,6 @@
 import React from 'react';
+import Carousel from '../../Carosoul/Carousel';
+import Footer from '../../Footer/Footer/Footer';
 import Story from '../../Home/Story/Story';
 import Services from '../Services/Services';
 import './About.css'
@@ -11,6 +13,8 @@ const About = () => {
           </div>  
           <Story /> 
           <Services />
+          <Carousel />
+          <Footer />
         </div>
     );
 };

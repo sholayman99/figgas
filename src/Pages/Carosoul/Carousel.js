@@ -63,9 +63,9 @@ const Carousel = () => {
       >
         {data.map((u) => (
           <SwiperSlide key={u.id}>
-            <div className="flex items-center justify-center lg:py-36 py-10 px-8">
-              <div className="lg:max-w-lg">
-                <div className="flex justify-center lg:mb-3">
+            <div className="flex items-center justify-center lg:py-36 md:py-28 py-10 px-8">
+              <div className="lg:max-w-lg md:max-w-lg">
+                <div className="flex justify-center lg:mb-3 md:mb-3">
                   <img className="lg:w-24 w-16 rounded-full" src={u.img} alt="" />
                 </div>
                 <div className="flex justify-center font-bold lg:text-xl text-lg  ">
