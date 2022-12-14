@@ -1,15 +1,17 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Carousel.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
 
 // import "./styles.css";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay,Navigation} from "swiper";
 import { Rating } from "@mui/material";
 
 const Carousel = () => {
@@ -43,19 +45,28 @@ const Carousel = () => {
   return (
     <section className="carousel ">
       <Swiper
+      modules={[Pagination,Autoplay,Navigation]}
         spaceBetween={30}
+        centeredSlides={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        navigation={
+           true
+        }
+        
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         className="mySwiper"
       >
         {data.map((u) => (
           <SwiperSlide key={u.id}>
-            <div className="flex items-center justify-center lg:py-36 py-10 px-6">
+            <div className="flex items-center justify-center lg:py-36 py-10 px-8">
               <div className="lg:max-w-lg">
                 <div className="flex justify-center lg:mb-3">
-                  <img className="w-24 rounded-full" src={u.img} alt="" />
+                  <img className="lg:w-24 w-16 rounded-full" src={u.img} alt="" />
                 </div>
                 <div className="flex justify-center font-bold lg:text-xl text-lg  ">
                 

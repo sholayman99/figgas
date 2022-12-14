@@ -1,16 +1,18 @@
 .gallery-text{
     text-align: center;
-    padding: 40px 0px;
+    padding: 50px 0px;
 }
 .gallery-text h1{
 
   font-size: 40px;
   font-weight: 700;
+  
 
 }
 
 .gallery-text p{
     color: rgb(57, 55, 55);
+    margin-bottom: 15px;
 }
 
 @media screen and (max-width:767px) {
