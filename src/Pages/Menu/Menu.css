@@ -1,0 +1,45 @@
+.menu{
+    background-image: url('../../assets/menuBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  
+}
+
+.menu h1{
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 12rem 0rem;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    
+
+}
+
+@media screen and (max-width:767px) {
+    .menu{
+        background-attachment: unset;
+    }
+
+    .menu h1{
+        font-size: 2.2rem;
+        padding: 5rem 0rem;
+    }
+}
+
+@media screen and (max-width:1023px) and (min-width:767px) {
+    .menu{
+        background-attachment: unset;
+    }
+
+    .menu h1{
+        font-size: 4.2rem;
+        padding: 10rem 0rem;
+    }
+}
