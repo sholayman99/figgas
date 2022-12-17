@@ -1,8 +1,8 @@
 import { Tab } from '@headlessui/react';
 import React, { useState } from 'react';
-import './Gallery.css'
+import './HomeGallery.css'
 
-const Gallery = () => {
+const HomeGallery = () => {
     const classNames = (...classes) => {
         return classes.filter(Boolean).join(' ')
     }
@@ -88,7 +88,7 @@ const Gallery = () => {
          })
 
     return (
-        <section className="w-full   px-2 pt-10 sm:px-0   bg-slate-50 ">
+        <section className="w-full  px-2 py-14 sm:px-0   bg-slate-50 ">
             <div className='gallery-text' >
                 <h1>Food and Customer Gallery</h1>
                 <p>Who are in extremely love with eco friendly system.</p>
@@ -145,4 +145,4 @@ const Gallery = () => {
     );
 };
 
-export default Gallery;
+export default HomeGallery;

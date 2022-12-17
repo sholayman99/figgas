@@ -1,9 +1,9 @@
 import React from 'react';
-import Carousel from '../../Carosoul/Carousel';
+import Carousel from '../../Carousel/Carousel';
 import Footer from '../../Footer/Footer/Footer';
 import Banner from '../Banner/Banner';
 import Form from '../Form/Form';
-import Gallery from '../Gallery/Gallery';
+import HomeGallery from '../HomeGallery/HomeGallery';
 import LatestBlog from '../LatestBlog/LatestBlog';
 import ServeFood from '../ServeFood/ServeFood';
 import Story from '../Story/Story';
@@ -16,7 +16,7 @@ const Home = () => {
          <Story />
          <ServeFood />
          <Form /> 
-         <Gallery />  
+         <HomeGallery />  
          <Carousel />
          <LatestBlog />
          <Footer />

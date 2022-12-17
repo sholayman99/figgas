@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from '../../Carosoul/Carousel';
+import Carousel from '../../Carousel/Carousel';
 import Footer from '../../Footer/Footer/Footer';
 import Story from '../../Home/Story/Story';
 import Services from '../Services/Services';
